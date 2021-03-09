@@ -1,11 +1,11 @@
-import {Component} from '@angular/core';
-import {FormGroup} from "@angular/forms";
-import {FormlyFieldConfig} from "@ngx-formly/core";
+import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { FormlyFieldConfig } from '@ngx-formly/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   form = new FormGroup({});
@@ -18,7 +18,7 @@ export class AppComponent {
         label: 'Input',
         placeholder: 'Input placeholder',
         required: true,
-      }
+      },
     },
     {
       key: 'textarea',
@@ -27,14 +27,14 @@ export class AppComponent {
         label: 'Textarea',
         placeholder: 'Textarea placeholder',
         required: true,
-      }
+      },
     },
     {
       key: 'checkbox',
       type: 'checkbox',
       templateOptions: {
         label: 'Checkbox',
-      }
+      },
     },
     {
       key: 'select',
@@ -44,11 +44,11 @@ export class AppComponent {
         placeholder: 'Select placeholder',
         required: true,
         options: [
-          {label: 'Option 1', value: '1'},
-          {label: 'Option 2', value: '2'},
-          {label: 'Option 3', value: '3'},
-        ]
-      }
+          { label: 'Option 1', value: '1' },
+          { label: 'Option 2', value: '2' },
+          { label: 'Option 3', value: '3' },
+        ],
+      },
     },
     {
       key: 'radio',
@@ -57,11 +57,11 @@ export class AppComponent {
         label: 'Radio',
         required: true,
         options: [
-          {label: 'Option 1', value: '1'},
-          {label: 'Option 2', value: '2'},
-        ]
-      }
-    }
+          { label: 'Option 1', value: '1' },
+          { label: 'Option 2', value: '2' },
+        ],
+      },
+    },
   ];
 
   onSubmit() {
