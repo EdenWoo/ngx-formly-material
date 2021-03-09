@@ -10,6 +10,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "ngx-formly-material-ui": [
+        "dist/ngx-formly-material-ui/ngx-formly-material-ui",
+        "dist/ngx-formly-material-ui"
+      ]
+    },
     "target": "es2015",
     "module": "es2020",
     "lib": [
